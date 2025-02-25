@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Botao } from "./Botao";
 
@@ -6,9 +6,7 @@ function handleOnClick(){
   alert("Função chamada!!");
 }
 
-function handleOnChange(e){
-  console.log(e.target.value);
-}
+
 
 function BotaoHandleClick({textDisplay, ...other}){
   const msg = textDisplay + ' - ' + other.msgAlerta;
@@ -17,7 +15,16 @@ function BotaoHandleClick({textDisplay, ...other}){
   )
 }
 
-export function Header() {
+export function Header({chamada, ...props}) {
+
+  const [inputHeader, setInputHeader] = useState('');
+
+  function handleOnChange(e){
+    setInputHeader(e.target.value);
+    chamada(e.target.value);
+    console.log(e.target.value);
+  }
+
     return(
   <div>
     <header className="header">

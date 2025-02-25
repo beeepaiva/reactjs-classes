@@ -10,6 +10,7 @@ const arrNumerico = [1,2,3,4,5];
 const arrAulas = [{id: 1, nome:"aula 1"}, {id:2, nome: "aula 2"}]
 const objCurso = {nome: "BCC", detalhes: "Ciência da computação"}
 
+
   return (
   <div className='App'>
   <Header />

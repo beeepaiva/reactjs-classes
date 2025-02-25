@@ -10,8 +10,8 @@ function handleOnChange(e){
   console.log(e.target.value);
 }
 
-function BotaoHandleClick({textDisplay, ...props}){
-  const msg = textDisplay + ' - ' + props.msgAlerta;
+function BotaoHandleClick({textDisplay, ...other}){
+  const msg = textDisplay + ' - ' + other.msgAlerta;
   return (
     <button onClick={()=>{alert(textDisplay + ' - ' + textDisplay)} } >{textDisplay}</button>
   )

@@ -1,6 +1,13 @@
 .App {
   text-align: center;
   width: 100%;
+  background-color: #282c34;
+}
+
+.AppLight {
+  text-align: center;
+  width: 100%;
+  background-color: #ffff;
 }
 
 .App-logo {

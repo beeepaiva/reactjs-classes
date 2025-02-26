@@ -21,6 +21,8 @@ const [valor, setValor] = useState(0);
 const [textoBusca, setTextoBusca] = useState("");
 const [valorFilho, setValorFilho] = useState('');
 
+const [temaEscuro, setTemaEscuro] = useState(false)
+
 function recebeValor(texto){
   if(texto===''){
     setValorFilho("Vazio");
@@ -30,8 +32,13 @@ function recebeValor(texto){
   
 }
 
+function mudarTema(){
+  setTemaEscuro(!temaEscuro);
+}
+
+
   return (
-  <div className='App'>
+  <div className={temaEscuro ? 'App' : 'AppLight'}>
   <Header chamada={recebeValor}/>
   <p>{valorFilho}</p>
   <br/><br/>
@@ -41,7 +48,9 @@ function recebeValor(texto){
     <br/>
     <input onChange={(e)=>setTextoBusca(e.target.value)}/>
     <p>{textoBusca}</p>
-    <ListaItens/>
+    <br/><br/>
+
+    <button onClick={mudarTema}> {temaEscuro ? "Mudar para tema claro" : "Mudar para tema escuro"}</button>
   </div>
   )
 }

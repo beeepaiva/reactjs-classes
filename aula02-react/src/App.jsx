@@ -21,7 +21,7 @@ const [valor, setValor] = useState(0);
 const [textoBusca, setTextoBusca] = useState("");
 const [valorFilho, setValorFilho] = useState('');
 
-const [temaEscuro, setTemaEscuro] = useState(false)
+const [temaEscuro, setTemaEscuro] = useState(false);
 
 function recebeValor(texto){
   if(texto===''){
@@ -38,7 +38,7 @@ function mudarTema(){
 
 
   return (
-  <div className={temaEscuro ? 'App' : 'AppLight'}>
+  <div className= {temaEscuro ? 'App' : 'AppLight'}>
   <Header chamada={recebeValor}/>
   <p>{valorFilho}</p>
   <br/><br/>

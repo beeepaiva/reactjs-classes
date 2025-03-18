@@ -1,0 +1,53 @@
+.climaTempo{  
+  text-align: center;
+  height: 100%;
+}
+
+.cidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  justify-items: center; 
+  height: auto
+}
+  
+
+.cidade-card {
+  background-color: #fff;
+  color:black;
+  padding: 20px;
+  width: 200px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: transform 0.3s ease;
+  overflow: auto;
+}
+
+.adicaoCidades {
+  display: flex;
+  flex-direction: row; 
+  box-shadow: 1px 5px 4px 1px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+  width: 100%;
+  margin: 20px;
+  padding: 10px;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 5px;
+  
+}
+.botoesAdicaoCidades button{
+  margin: 10px;
+  text-align: center;
+  color: white;
+  font-size: 12px;
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+  

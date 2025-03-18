@@ -1,48 +1,132 @@
 .App {
-  text-align: center;
-  width: 100%;
-  background-color: #282c34;
+  background-color: #212529;
+  color: #ffffff;
+  display: grid;
 }
 
 .AppLight {
+  background-color: #f8f9fa; 
+  color: #212529; 
+  display: grid;
+}
+
+.footerLight {
   text-align: center;
-  width: 100%;
-  background-color: #ffff;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+  padding: 2px;
+  color: white;
   background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+}
+
+.footerDark {
+  text-align: center;
+  padding: 2px;
+  color: #282c34;
+  background-color: white;
+  width: 100vw;
+}
+
+.headerLight {
+  text-align: center;
+  padding: 2px;
+  color: white;
+  background-color: #282c34;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.headerDark {
+  text-align: center;
+  padding: 2px;
+  color: #282c34;
+  background-color: white;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.buttonHall{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  margin: 20px;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttonHall button {
+  background-color: #E97132;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+button {
+  background-color: #E97132;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exercicio {
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+
+.operacoes {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin: 10px;
+  justify-items: center;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: start;
+  align-content: space-around;
+  flex-wrap: wrap;
+}
+.operacoes button{
+  background-color: #282c34 !important;
+  text-align: center;
   color: white;
+  font-size: 12px;
+  height: 30px;
+  width: 150px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.calculadora{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  flex-direction: column;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.calculadoraIMC{
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+  flex-wrap: nowrap;
+  align-content: space-between;
+  flex-direction: column;
 }
-
-

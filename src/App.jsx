@@ -1,12 +1,11 @@
-import logo from './logo.svg';
 import React, { useState } from 'react';
 import './App.css';
 /* Import dos nossos componentes */
-import { Header } from './components/Header.jsx';
-import {Footer} from './components/Footer.jsx';
-import { CalculadoraIMC } from './components/CalculadoraIMC.jsx';
-import { Calculadora } from './components/Calculadora.jsx';
-import { ClimaTempo } from './components/ClimaTempo.jsx';
+import { Header } from './componentes/Header.jsx';
+import {Footer} from './componentes/Footer.jsx';
+import { CalculadoraIMC } from './componentes/CalculadoraIMC.jsx';
+import { Calculadora } from './componentes/Calculadora.jsx';
+import { ClimaTempo } from './componentes/ClimaTempo.jsx';
 
 function App() {
 

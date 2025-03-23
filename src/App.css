@@ -2,12 +2,14 @@
   background-color: #212529;
   color: #ffffff;
   display: grid;
+  min-height: 100vh; 
 }
 
 .AppLight {
   background-color: #f8f9fa; 
   color: #212529; 
   display: grid;
+  min-height: 100vh; 
 }
 
 .footerLight {
@@ -33,7 +35,7 @@
   background-color: #282c34;
   width: 100vw;
   display: flex;
-  align-items: center;
+  align-items:center;
   justify-content: space-between;
 
 }
